@@ -3,59 +3,92 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/output.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <title>NPR</title>
   </head>
   <body>
     <nav>
-      <img src="img/npr-logo.svg" alt="NPR Logo">
-      <ul>
-        <li><a href="#">news</a></li>
-        <li><a href="#">arts & life</a></li>
-        <li><a href="#">music</a></li>
-        <li><a href="#">topics</a></li>
-        <li><a href="#">programs & podcasts</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">set station</a></li>
-        <li><a href="#">npr shop</a></li>
-        <li><a href="#">sign in</a></li>
-        <li><a href="#">search</a></li>
-      </ul>
-
+      <div class="nav-items">
+        <img id="logo" src="img/npr-logo.svg" alt="NPR Logo">
+        <ul class="no-bullet">
+          <li><a href="#">news</a></li>
+          <li><a href="#">arts & life</a></li>
+          <li><a href="#">music</a></li>
+          <li><a href="#">topics</a></li>
+          <li><a href="#">programs & podcasts</a></li>
+        </ul>
+        <ul class="no-bullet" id="nav-icons">
+          <li><a href="#"><img src="img/set-station.png" alt=""></a></li>
+          <li><a href="#"><img src="img/npr-shop.png" alt=""></a></li>
+          <li><a href="#"><img src="img/sign-in.png" alt=""></a></li>
+          <li><a href="#"><img src="img/magnifying-glass.png" alt=""></a></li>
+        </ul>
+      </div>
     </nav>
     <div class="container">
       <div class="story-wrap">
-        <h3>POLITICS</h3>
-        <h1>WATCH LIVE: Senators Question Brett Kavanaugh In Day 2 Of Hearings</h1>
-        <p>Under grilling by Democrats, the Supreme Court nominee called Roe v. Wade "important precedent" but stopped short of saying whether he thinks that case was correctly decided.</p>
+        <div class="row">
+          <div class="col-md-6">
+            <h3><a href="#">POLITICS</a></h3>
+            <h1><a href="#">WATCH LIVE: Senators Question Brett Kavanaugh In Day 2 Of Hearings</a></h1>
+            <p><a href="#">Under grilling by Democrats, the Supreme Court nominee called Roe v. Wade "important precedent" but stopped short of saying whether he thinks that case was correctly decided.</a></p>
+          </div>
+          <div class="col-md-6">
+            <iframe width="450" height="280" src="https://www.youtube.com/embed/yiXJsqw-MTI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p id="videoCredit">Credit: AP</p>
+          </div>
+        </div>
         <ul>
           <li><a href="#">Day 1: Protesters Focus On Roe; Attempted Handshake Goes Viral</a></li>
         </ul>
       </div>
       <div class="row">
         <div class="col-md-4">
-          <div class="card">
-
+          <div class="card subarticles">
+            <img class="card-img-top" src="img/medical.jpg" alt="">
+            <div class="card-body">
+              <h3><a href="#">SHOTS - HEALTH NEWS</a></h3>
+              <h2><a href="#">A Medical School Tradition Comes Under Fire For Racism</a></h2>
+            </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card">
-
+          <div class="card subarticles">
+            <img class="card-img-top" src="img/ayanna.jpg" alt="">
+            <div class="card-body">
+              <h3><a href="#">POLITICS</a></h3>
+              <h2><a href="#">Ayanna Pressley's Upset Victory Shows Power Of Women Of Color In Democratic Politics</a></h2>
+            </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card">
-
+          <div class="card subarticles">
+            <img class="card-img-top" src="img/dubai.jpg" alt="">
+            <div class="card-body">
+              <h3><a href="#">NATIONAL</a></h3>
+              <h2><a href="#">Dubai-NYC Flight Ends With Sick Passengers Taken To Hospital; Jet Quarantined</a></h2>
+            </div>
           </div>
         </div>
       </div>
       <div class="pick-station">
-        <div class="card">
-
+        <h4>Pick Your Local NPR Station</h4>
+        <p>There are at least 2 stations nearby. Would you like to save one as your favorite?</p>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card stationCard">
+              <img class="card-img-top" id="opbImg" src="img/opb.png" alt="">
+              <button class="saveFavorite" type="button" name="button">SAVE AS FAVORITE</button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card stationCard">
+              <img class="card-img-top" id="kmhdImg" src="img/kmhd.gif" alt="">
+              <button class="saveFavorite" type="button" name="button">SAVE AS FAVORITE</button>
+            </div>
+          </div>
         </div>
-        <div class="card">
-
-        </div>
+        <button id="anotherButton" type="button" name="button">NO, HELP ME FIND ANOTHER</button>
       </div>
     </div>
   </body>

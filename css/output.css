@@ -1,0 +1,125 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #d8d8d8; }
+
+.container {
+  width: 1000px; }
+
+.story-wrap, .pick-station {
+  background-color: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 8px;
+  padding-right: 20px;
+  margin-bottom: 20px; }
+
+.subarticles {
+  height: 350px;
+  margin-bottom: 20px; }
+
+.stationCard {
+  height: 200px;
+  padding-top: 40px; }
+  .stationCard img {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 30px;
+    margin-right: auto; }
+
+a {
+  color: black; }
+
+a:hover {
+  text-decoration: none;
+  color: #6286c1; }
+
+nav {
+  margin-bottom: 20px;
+  background-color: white; }
+  nav .nav-items {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  nav a {
+    color: #6286c1;
+    font-size: 14pt;
+    font-weight: normal;
+    margin-left: -35px;
+    padding-right: 70px; }
+  nav #logo {
+    width: 150px;
+    margin-bottom: 20px; }
+
+.no-bullet {
+  list-style-type: none; }
+  .no-bullet li {
+    display: inline; }
+
+#nav-icons {
+  float: right;
+  margin-top: -120px;
+  margin-right: -20px; }
+
+h1 {
+  font-weight: 900;
+  font-size: 24pt; }
+
+h2 {
+  font-weight: 900;
+  font-size: 14pt; }
+
+h3 > a {
+  color: #828282;
+  font-size: 12pt;
+  font-weight: 400; }
+
+.pick-station {
+  border-top: 5px solid #6286c1;
+  text-align: center; }
+  .pick-station h4 {
+    font-size: 26pt; }
+
+p {
+  color: #828282;
+  font-size: 12pt; }
+  p a:hover {
+    color: #828282; }
+  p a {
+    color: #828282;
+    font-size: 12pt; }
+
+#videoCredit {
+  font-size: 10pt;
+  text-align: right;
+  padding-right: 8px; }
+
+#opbImg {
+  width: 165.78px;
+  height: 70px; }
+
+#kmhdImg {
+  width: 165.78px;
+  height: 70px; }
+
+.saveFavorite {
+  background-color: #6286c1;
+  color: white;
+  width: 35%;
+  display: flex;
+  align-self: center; }
+
+#anotherButton {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  color: #6286c1;
+  border: 1px solid #6286c1; }
+
+#anotherButton:hover, .saveFavorite:hover {
+  cursor: pointer;
+  opacity: 0.75; }
+
+/*# sourceMappingURL=output.css.map */
